@@ -152,4 +152,23 @@ li a:hover:before {
     font-size: 40px;
 }
 
+.projects {
+    position: fixed;
+    top: 20%;
+    border: 1px solid white;;
+    width: 80%;
+    height: 40%;
+    flex-wrap: wrap;
+}
+.projects img {
+    align-self: auto;
+    height: 200px;
+    width: 200px;
+}
+
+.work {
+    align-self: baseline;
+    height: 130px;
+    width: 130px;
+}
 
