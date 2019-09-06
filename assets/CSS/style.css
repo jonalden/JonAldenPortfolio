@@ -90,6 +90,7 @@ img {
     text-align: center;
     padding: 11px;
     margin-bottom: 300px;
+    border-bottom: 1px solid rgba(111, 119, 122, 0.8)
 }
 
 #navigationList li {
