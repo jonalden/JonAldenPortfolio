@@ -100,7 +100,7 @@ img {
 li a {
     font-size: 19px;
     position: relative;
-    bottom: 10px;
+    top: 5px;
     color: white;
     text-decoration: none;
     margin: 20px;
@@ -131,12 +131,24 @@ li a:hover:before {
     transform: scaleX(1);
 }
 
-#nameTitle p {
+#nameTitle h1 {
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     position: fixed;
-    top: 200px;
+    top: 220px;
     text-align: center;
     color: white;
     font-size: 100px;
 }
+
+#nameTitle h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 340px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+
