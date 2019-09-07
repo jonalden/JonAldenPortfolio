@@ -1,5 +1,4 @@
-
-@keyframes move-background {
+/* @keyframes move-background {
     from {
         -webkit-transform: translate3d(0px, 0px, 0px);
     }
@@ -70,15 +69,7 @@
     -o-animation: move-background 70s linear infinite;
     -webkit-animation: move-background 70s linear infinite;
     animation: move-background 70s linear infinite;
-}
-
-img {
-    height: 70vh;
-    width: 70vh;
-    position: absolute;
-    z-index: 3;
-    right: 20px;
-}
+} */
 
 #header {
     width: 100%;
@@ -152,23 +143,35 @@ li a:hover:before {
     font-size: 40px;
 }
 
+.projects-container {
+    text-align: center;
+}
+
 .projects {
     position: fixed;
     top: 20%;
-    border: 1px solid white;;
-    width: 80%;
-    height: 40%;
+    border: 1px solid black;
+    width: 60%;
+    height: auto;
+    display: flex;
     flex-wrap: wrap;
-}
-.projects img {
-    align-self: auto;
-    height: 200px;
-    width: 200px;
+    justify-content: center;
+    margin-left: 14.5%;
+    margin-right: 14.5%;
+
 }
 
 .work {
-    align-self: baseline;
-    height: 130px;
-    width: 130px;
+    flex: 1 1 auto;
+    height: auto;
+    max-width: auto;
+    margin: 20px 20px;
+    text-align: center;
+
 }
 
+.projects img {
+    height: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+}
