@@ -148,16 +148,15 @@ li a:hover:before {
 }
 
 .projects {
-    position: fixed;
+    position: relative;
     top: 20%;
-    border: 1px solid black;
-    width: 60%;
+    width: 899;
+    margin: 0px auto;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 14.5%;
-    margin-right: 14.5%;
+   
 
 }
 
