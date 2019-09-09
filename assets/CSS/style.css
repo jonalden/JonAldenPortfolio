@@ -200,6 +200,7 @@ li a:hover:before {
 }
 
 .image-text {
+    font-family: 'Titillium Web', sans-serif;
     position: absolute;
     max-width: 100px;;
     bottom: 100px;
@@ -303,7 +304,7 @@ li a:hover:before {
 }
 
 #gitImg, #twitterImg, #linkedImg {
-    width:30px;
-    height: 30px;
+    width:50px;
+    height: 50px;
     margin: 0 50px;
 }
