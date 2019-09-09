@@ -278,6 +278,7 @@ li a:hover:before {
 .form-style-4 input[type=submit], .form-style-4 input[type=button] {
     background: #576E86;
     border: none;
+    margin-top: 15px;
     padding: 8px 10px 8px 10px;
     border-radius: 5px;
     color: #A8BACE;
@@ -286,6 +287,7 @@ li a:hover:before {
 .form-style-4 input[type=submit]:hover, .form-style-4 input[type=button]:hover {
     background: #394D61;
 }
+
 
 .socialDiv {
     width: 100%;
