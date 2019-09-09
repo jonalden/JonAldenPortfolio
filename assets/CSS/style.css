@@ -1,3 +1,5 @@
+/* Keyframes for twinkling background */
+
 @keyframes move-background {
     from {
         -webkit-transform: translate3d(0px, 0px, 0px);
@@ -33,6 +35,8 @@
         -webkit-transform: translate3d(1000px, 0px, 0px);
     }
 }
+
+/* Twinkling stars div */
 
 .background-container {
     position: fixed;
@@ -71,6 +75,8 @@
     animation: move-background 70s linear infinite;
 }
 
+/* header and navlinks */
+
 #header {
     width: 100%;
     height: 4%;
@@ -79,9 +85,13 @@
     right: 0;
     top: 0;
     text-align: center;
-    padding: 11px;
+    padding: 11 0 11 11;
     margin-bottom: 300px;
     border-bottom: 1px solid rgba(111, 119, 122, 0.8)
+}
+
+#navigationList {
+    width: 100%;
 }
 
 #navigationList li {
@@ -123,6 +133,8 @@ li a:hover:before {
     transform: scaleX(1);
 }
 
+/* Name and statement on index */
+
 #nameTitle h1 {
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
@@ -143,6 +155,8 @@ li a:hover:before {
     font-size: 40px;
 }
 
+/* projects links  */
+
 .projects-container {
     text-align: center;
 }
@@ -156,7 +170,11 @@ li a:hover:before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+}
+
+.projects:hover .image-text {
+    visibility: visible;
+    transition:.5s;
 
 }
 
@@ -166,11 +184,126 @@ li a:hover:before {
     max-width: auto;
     margin: 20px 20px;
     text-align: center;
-
+    position: relative;
 }
 
 .projects img {
     height: 200px;
     max-width: 200px;
+    border: 5px solid #53687E;
     border-radius: 50%;
+}
+
+.projects img:hover {
+    opacity: .3;
+    transition: .5s;
+}
+
+.image-text {
+    position: absolute;
+    max-width: 100px;;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -50px;
+    color: white;
+    font-size: 25px;
+    visibility: hidden;
+}
+
+.image-text:hover .projects img {
+    opacity: .3;
+}
+
+
+
+/* contact form */
+
+.form-style-4 {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    margin-left: -360px;
+    width: 650px;
+    font-size: 16px;
+    background: transparent;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+}
+
+.form-style-4 input[type=submit], .form-style-4 input[type=button], .form-style-4 input[type=text], .form-style-4 input[type=email], .form-style-4 textarea, .form-style-4 label {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.form-style-4 label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-style-4 label>span {
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+
+.form-style-4 input[type=text], .form-style-4 input[type=email] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+
+.form-style-4 textarea {
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize: none;
+    height: 20px;
+}
+
+.form-style-4 textarea:focus, .form-style-4 input[type=text]:focus, .form-style-4 input[type=email]:focus, .form-style-4 input[type=email] :focus {
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style-4 input[type=submit], .form-style-4 input[type=button] {
+    background: #576E86;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #A8BACE;
+}
+
+.form-style-4 input[type=submit]:hover, .form-style-4 input[type=button]:hover {
+    background: #394D61;
+}
+
+.socialDiv {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+.socialIcons {
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+#gitImg, #twitterImg, #linkedImg {
+    width:30px;
+    height: 30px;
+    margin: 0 50px;
 }
