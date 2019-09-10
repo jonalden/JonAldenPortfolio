@@ -56,6 +56,7 @@
     right: 0;
     display: block;
     z-index: 1;
+    background-attachment: fixed;
 }
 
 .twinkling {
@@ -73,6 +74,7 @@
     -o-animation: move-background 70s linear infinite;
     -webkit-animation: move-background 70s linear infinite;
     animation: move-background 70s linear infinite;
+    background-attachment: fixed;
 }
 
 /* header and navlinks */
@@ -133,13 +135,95 @@ li a:hover:before {
     transform: scaleX(1);
 }
 
+/* flip card with profile pic */
+
+.flip-card {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-back h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    margin: 30px auto 5px;
+}
+
+.flip-card-back p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+
+.flip-card-front, .flip-card-back {
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+
+.flip-card-back {
+    border: 5px solid #53687E;
+    background-color: #53687E;
+    color: rgb(114, 204, 168);
+    transform: rotateY(180deg);
+}
+
+.flip-card img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #53687E;
+}
+
+#resume {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+
 /* Name and statement on index */
 
 #nameTitle h1 {
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     position: fixed;
-    top: 220px;
+    top: 42%;
     text-align: center;
     color: white;
     font-size: 100px;
@@ -149,7 +233,7 @@ li a:hover:before {
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     position: fixed;
-    top: 340px;
+    top: 54%;
     text-align: center;
     color: white;
     font-size: 40px;
@@ -172,10 +256,28 @@ li a:hover:before {
     justify-content: center;
 }
 
-.projects:hover .image-text {
+#psychicImage:hover+#psychicText {
     visibility: visible;
-    transition:.5s;
+}
 
+#sfImage:hover+#sfText {
+    visibility: visible;
+}
+
+#runImage:hover+#runText {
+    visibility: visible;
+}
+
+#trainImage:hover+#trainText {
+    visibility: visible;
+}
+
+#moonImage:hover+#moonText {
+    visibility: visible;
+}
+
+#gifImage:hover+#gifText {
+    visibility: visible;
 }
 
 .work {
@@ -197,25 +299,22 @@ li a:hover:before {
 .projects img:hover {
     opacity: .3;
     transition: .5s;
+    visibility: visible;
+    transition: .5s;
 }
 
 .image-text {
     font-family: 'Titillium Web', sans-serif;
     position: absolute;
-    max-width: 100px;;
-    bottom: 100px;
+    max-width: 100px;
+    bottom: 80px;
     left: 50%;
     margin-left: -50px;
     color: white;
     font-size: 25px;
+    font-weight: bolder;
     visibility: hidden;
 }
-
-.image-text:hover .projects img {
-    opacity: .3;
-}
-
-
 
 /* contact form */
 
@@ -288,6 +387,7 @@ li a:hover:before {
     background: #394D61;
 }
 
+/* social media links */
 
 .socialDiv {
     width: 100%;
@@ -295,18 +395,29 @@ li a:hover:before {
     position: absolute;
     bottom: 20%;
     left: 50%;
-    transform:translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .socialIcons {
     position: absolute;
-    top:10%;
+    top: 10%;
     left: 50%;
-    transform:translateX(-50%);
+    transform: translateX(-50%);
 }
 
-#gitImg, #twitterImg, #linkedImg {
-    width:50px;
+#gitImg, #twitterImg, #linkedImg, #resumeImg {
+    width: 50px;
     height: 50px;
     margin: 0 50px;
+    transition: transform .2s;
+}
+
+#gitImg:hover, #twitterImg:hover, #linkedImg:hover, #resumeImg:hover {
+    transform: scale(1.5);
+}
+
+#resumeImg {
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
 }
