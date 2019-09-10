@@ -258,6 +258,7 @@ li a:hover:before {
 
 #psychicImage:hover+#psychicText {
     visibility: visible;
+    color: rgb(114, 204, 168);
 }
 
 #sfImage:hover+#sfText {
@@ -417,7 +418,7 @@ li a:hover:before {
 }
 
 #resumeImg {
-    height: 45px;
+    height: 38px;
     width: 45px;
     border-radius: 10px;
 }
