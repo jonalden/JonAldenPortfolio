@@ -289,7 +289,7 @@ li a:hover:before {
 @media only screen and (max-width: 640px) {
     .projects {
         position: relative;
-        top: 14%;
+        top: 75px;
         width: 100%;
         margin: 0px auto 100px;
         height: auto;

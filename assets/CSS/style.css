@@ -270,7 +270,7 @@ li a:hover:before {
         width: 150px;
         height: 150px;
         position: absolute;
-        top: 14%;
+        top: 95px;
         left: 50%;
         transform: translateX(-50%);
     }

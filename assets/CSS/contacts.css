@@ -267,7 +267,7 @@ li a:hover:before {
 @media only screen and (max-width: 640px) {
     .formDiv {
         position: relative;
-        top: 160px;
+        top: 95px;
         left: 0;
         width: 300px;
         margin: 0 auto;
