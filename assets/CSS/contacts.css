@@ -235,8 +235,10 @@ li a:hover:before {
 
 .socialIcons {
     position: absolute;
-    top: 10%;
+    top: 300px;
     left: 50%;
+    text-align: center;
+    width: 100%;
     transform: translateX(-50%);
 }
 
@@ -302,7 +304,7 @@ li a:hover:before {
 
     .socialIcons {
         position: absolute;
-        top: 200px;
+        top: 350px;
         left: 50%;
         width: 342;
         transform: translateX(-50%);
