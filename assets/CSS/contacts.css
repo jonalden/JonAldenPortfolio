@@ -40,6 +40,9 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     }
 }
 
+
+
+
 /* Twinkling stars div */
 
 .background-container {
@@ -80,6 +83,9 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     animation: move-background 70s linear infinite;
     background-attachment: fixed;
 }
+
+
+
 
 /* header and navlinks */
 
@@ -139,156 +145,182 @@ li a:hover:before {
     transform: scaleX(1);
 }
 
-/* flip card with profile pic */
 
-.flip-card {
-    width: 200px;
-    height: 200px;
+
+
+/* contact form */
+
+.formDiv {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    margin-left: -360px;
+    width: 650px;
+    font-size: 16px;
+    background: transparent;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E; 
+}
+
+.form-style-4 input[type=submit], .form-style-4 input[type=button], .form-style-4 input[type=text], .form-style-4 input[type=email], .form-style-4 textarea, .form-style-4 label {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.form-style-4 label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-style-4 label>span {
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+
+.form-style-4 input[type=text], .form-style-4 input[type=email] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 490px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+
+.form-style-4 textarea {
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 490px;
+    overflow: hidden;
+    resize: none;
+    height: 20px;
+}
+
+.form-style-4 textarea:focus, .form-style-4 input[type=text]:focus, .form-style-4 input[type=email]:focus, .form-style-4 input[type=email] :focus {
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style-4 input[type=submit], .form-style-4 input[type=button] {
+    background: #576E86;
+    border: none;
+    margin-top: 15px;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #A8BACE;
+}
+
+.form-style-4 input[type=submit]:hover, .form-style-4 input[type=button]:hover {
+    background: #394D61;
+}
+
+
+
+
+/* social media links */
+
+.socialDiv {
+    width: 100%;
+    height: 100px;
     position: absolute;
-    top: 14%;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+
+.socialIcons {
+    position: absolute;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* This container is needed to position the front and back side */
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+#gitImg, #twitterImg, #linkedImg, #resumeImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 50px;
+    transition: transform .2s;
 }
 
-.flip-card-back h1 {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 30px;
-    margin: 30px auto 5px;
+#gitImg:hover, #twitterImg:hover, #linkedImg:hover, #resumeImg:hover {
+    transform: scale(1.5);
 }
 
-.flip-card-back p {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-    margin-bottom: 4px;
+#resumeImg {
+    height: 38px;
+    width: 45px;
+    border-radius: 10px;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-
-.flip-card-front, .flip-card-back {
-    border-radius: 50%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
-/* Style the back side */
-
-.flip-card-back {
-    border: 5px solid #53687E;
-    background-color: #53687E;
-    color: rgb(114, 204, 168);
-    transform: rotateY(180deg);
-}
-
-.flip-card img {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 5px solid #53687E;
-}
-
-#resume {
-    color: white;
-    font-size: 20px;
-    width: 100%;
-}
-
-/* Name and statement on index */
-
-#nameTitle h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    width: 100%;
-    position: fixed;
-    top: 42%;
-    text-align: center;
-    color: white;
-    font-size: 100px;
-}
-
-#nameTitle h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    width: 100%;
-    position: fixed;
-    top: 54%;
-    text-align: center;
-    color: white;
-    font-size: 40px;
-}
 
 
 /* media queries */
 
 @media only screen and (max-width: 640px) {
-    .flip-card img {
+    .formDiv {
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
+        top: 160px;
+        left: 0;
+        width: 342px;
+        margin: 0 auto;
+        font-size: 16px;
+        background: transparent;
+        padding: 10;
         border: 5px solid #53687E;
     }
-    #nameTitle h1 {
-        font-family: 'Josefin Sans', sans-serif;
-        width: 100%;
-        position: fixed;
-        top: 300;
-        text-align: center;
-        color: white;
-        font-size: 70px;
+    .form-style-4 input[type=text], .form-style-4 input[type=email] {
+        background: transparent;
+        border: none;
+        border-bottom: 1px dashed #83A4C5;
+        width: 300;
+        outline: none;
+        padding: 0px 0px 0px 0px;
+        font-style: italic;
+    }
+    .form-style-4 textarea {
+        font-style: italic;
+        padding: 0px 0px 0px 0px;
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px dashed #83A4C5;
+        width: 300px;
+        overflow: hidden;
+        resize: none;
+        height: 20px;
     }
 
-    .flip-card {
-        width: 150px;
-        height: 150px;
+    .form-style-4 {
+        width: 100%;
+    }
+
+    .socialIcons {
         position: absolute;
-        top: 14%;
+        top: 200px;
         left: 50%;
+        width: 342;
         transform: translateX(-50%);
     }
 
-    #nameTitle h2 {
-        font-family: 'Josefin Sans', sans-serif;
-        width: 100%;
-        position: fixed;
-        top: 400px;
-        text-align: center;
-        color: white;
-        font-size: 40px;
-    }
-
-    .flip-card-back h1 {
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 25;
-        margin: 8 auto 0;
+    #gitImg, #twitterImg, #linkedImg, #resumeImg {
+        width: 50px;
+        height: 50px;
+        margin: 0 16px;
+        transition: transform .2s;
     }
 }
+
+
+
+
+
+
+
+
 
