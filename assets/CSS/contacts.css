@@ -125,6 +125,7 @@
         background: transparent;
         padding: 10;
         border: 5px solid #53687E;
+        z-index: 1;
     }
     .form-style-4 input[type=text], .form-style-4 input[type=email] {
         background: transparent;
