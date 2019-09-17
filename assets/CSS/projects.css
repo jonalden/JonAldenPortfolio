@@ -295,9 +295,9 @@ li a:hover:before {
 
 /*scrolling*/
 
-a[ id= "projects" ]:target ~ #mainContent #projectsTitle {
+a[ id="projects"]:target~#mainContent #projectsTitle {
     -webkit-transform: translateY( 0px);
-    transform: translateY( 0px );
+    transform: translateY( 0px);
 }
 
 /*responsive media queries*/
@@ -313,21 +313,25 @@ a[ id= "projects" ]:target ~ #mainContent #projectsTitle {
         flex-wrap: wrap;
         justify-content: center;
     }
-
     #projectsTitle {
         position: relative;
         text-align: center;
         margin-top: 74%;
     }
-
     .projects img {
         height: 100px;
         max-width: 100px;
         border: 5px solid #53687E;
         border-radius: 50%;
     }
-
     .work {
         margin: 20px;
+    }
+    .image-text {
+        max-width: 70px;
+        font-size: 20px;
+        font-weight: 100;
+        top: 17px;
+        left: 73px;
     }
 }

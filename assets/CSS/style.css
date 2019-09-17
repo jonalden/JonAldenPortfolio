@@ -341,7 +341,7 @@ li a:hover:before {
 @media only screen and (max-width: 640px) {
     .indexContent {
         margin: 30% auto;
-        width: 90%;
+        width: 80%;
     }
     #nameTitle h1 {
         font-size: 60px;
@@ -352,7 +352,7 @@ li a:hover:before {
     }
     #nameTitle h3 {
         font-size: 20px;
-        text-align: left;
+        text-align: justify;
     }
 
     .flip-card {
@@ -363,6 +363,18 @@ li a:hover:before {
     .flip-card img{
         height: 160px;
         width: 160px;
+    }
+
+    .flip-card-back h1 {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 20px;
+        margin: 30px auto 5px;
+    }
+    
+    .flip-card-back p {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 15px;
+        margin-bottom: 4px;
     }
 
     
