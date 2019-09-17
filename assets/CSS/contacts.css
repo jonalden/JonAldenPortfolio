@@ -1,165 +1,24 @@
-/*CSS Reset*/
-
-html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
-
-/*Keyframes for twinkling background */
-
-@keyframes move-background {
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to {
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-}
-
-@-webkit-keyframes move-background {
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to {
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-}
-
-@-moz-keyframes move-background {
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to {
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-}
-
-@-webkit-keyframes move-background {
-    from {
-        -webkit-transform: translate3d(0px, 0px, 0px);
-    }
-    to {
-        -webkit-transform: translate3d(1000px, 0px, 0px);
-    }
-}
-
-
-
-
-/* Twinkling stars div */
-
-.background-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-}
-
-.stars {
-    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    z-index: 1;
-    background-attachment: fixed;
-}
-
-.twinkling {
-    width: 10000px;
-    height: 100%;
-    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-    background-size: 1000px 1000px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-    -moz-animation: move-background 70s linear infinite;
-    -ms-animation: move-background 70s linear infinite;
-    -o-animation: move-background 70s linear infinite;
-    -webkit-animation: move-background 70s linear infinite;
-    animation: move-background 70s linear infinite;
-    background-attachment: fixed;
-}
-
-
-
-
-/* header and navlinks */
-
-#header {
-    width: 100%;
-    height: 4%;
-    background: rgb(81, 94, 100);
-    position: fixed;
-    right: 0;
-    top: 0;
-    text-align: center;
-    padding: 11 0 11 11;
-    margin-bottom: 300px;
-    border-bottom: 1px solid rgba(111, 119, 122, 0.8)
-}
-
-#navigationList {
-    width: 100%;
-}
-
-#navigationList li {
-    display: inline;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-li a {
-    font-size: 19px;
-    position: relative;
-    top: 5px;
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-}
-
-li a:hover {
-    color: rgb(114, 204, 168);
-}
-
-li a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(114, 204, 168);
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-li a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-
-
 
 /* contact form */
 
+#contactTitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin: 26% auto 5%;
+}
+
 .formDiv {
     position: relative;
-    top: 30%;
-    left: 50%;
-    margin-left: -360px;
-    width: 650px;
+    margin: 7% auto 24%;
+    width: 50%;
     font-size: 16px;
     background: transparent;
     padding: 30px 30px 15px 30px;
-    border: 5px solid #53687E; 
+    border: 5px solid #53687E;
+    z-index: 999;
 }
 
 .form-style-4 input[type=submit], .form-style-4 input[type=button], .form-style-4 input[type=text], .form-style-4 input[type=email], .form-style-4 textarea, .form-style-4 label {
@@ -183,7 +42,7 @@ li a:hover:before {
     background: transparent;
     border: none;
     border-bottom: 1px dashed #83A4C5;
-    width: 490px;
+    width: 100%;
     outline: none;
     padding: 0px 0px 0px 0px;
     font-style: italic;
@@ -196,7 +55,7 @@ li a:hover:before {
     outline: none;
     border: none;
     border-bottom: 1px dashed #83A4C5;
-    width: 490px;
+    width: 100%;
     overflow: hidden;
     resize: none;
     height: 20px;
@@ -224,18 +83,9 @@ li a:hover:before {
 
 /* social media links */
 
-.socialDiv {
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-} 
-
 .socialIcons {
     position: absolute;
-    top: 300px;
+    bottom: -37%;
     left: 50%;
     text-align: center;
     width: 100%;
@@ -308,6 +158,7 @@ li a:hover:before {
         left: 50%;
         width: 342;
         transform: translateX(-50%);
+        margin: 2% auto 70%;
     }
 
     #gitImg, #twitterImg, #linkedImg, #resumeImg {
@@ -315,6 +166,15 @@ li a:hover:before {
         height: 50px;
         margin: 0 16px;
         transition: transform .2s;
+    }
+
+    #contactTitle {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+        color: white;
+        position: relative;
+        text-align: center;
+        margin: 92% auto 4%;
     }
 }
 

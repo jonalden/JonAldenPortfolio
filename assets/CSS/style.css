@@ -1,6 +1,74 @@
 /*CSS Reset*/
 
-html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+html {
+    color: #000;
+    background: #FFF;
+    scroll-behavior: smooth;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset, img {
+    border: 0
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol, ul {
+    list-style: none
+}
+
+caption, th {
+    text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before, q:after {
+    content: ''
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%
+}
+
+legend {
+    color: #000
+}
+
+#yui3-css-stamp.cssreset {
+    display: none
+}
 
 /*Keyframes for twinkling background */
 
@@ -93,7 +161,8 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     text-align: center;
     padding: 11 0 11 11;
     margin-bottom: 300px;
-    border-bottom: 1px solid rgba(111, 119, 122, 0.8)
+    border-bottom: 1px solid rgba(111, 119, 122, 0.8);
+    z-index: 999;
 }
 
 #navigationList {
@@ -139,15 +208,28 @@ li a:hover:before {
     transform: scaleX(1);
 }
 
+/* main container with all content */
+
+#mainContent {
+    -webkit-transform: translateZ( 0 );
+    transform: translateZ( 0 );
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.indexContent {
+    margin: 12% auto;
+    width: 60%;
+}
+
 /* flip card with profile pic */
 
 .flip-card {
     width: 200px;
     height: 200px;
-    position: absolute;
-    top: 14%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 12px auto 70px;
 }
 
 /* This container is needed to position the front and back side */
@@ -221,74 +303,67 @@ li a:hover:before {
     width: 100%;
 }
 
-/* Name and statement on index */
+/* Name, title, and statement on index */
 
 #nameTitle h1 {
     font-family: 'Josefin Sans', sans-serif;
+    position: relative;
     width: 100%;
-    position: fixed;
-    top: 42%;
     text-align: center;
     color: white;
     font-size: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 #nameTitle h2 {
     font-family: 'Josefin Sans', sans-serif;
+    position: relative;
     width: 100%;
-    position: fixed;
-    top: 54%;
     text-align: center;
     color: white;
     font-size: 40px;
+    margin-bottom: 90px;
 }
 
+#brandStatement {
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    width: 100%;
+    top: 48%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
 
 /* media queries */
 
 @media only screen and (max-width: 640px) {
-    .flip-card img {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
-        border: 5px solid #53687E;
+    .indexContent {
+        margin: 30% auto;
+        width: 90%;
     }
     #nameTitle h1 {
-        font-family: 'Josefin Sans', sans-serif;
-        width: 100%;
-        position: fixed;
-        top: 300;
-        text-align: center;
-        color: white;
-        font-size: 70px;
+        font-size: 60px;
+    }
+    #nameTitle h2 {
+        font-size: 30px;
+        margin-bottom: 10%;
+    }
+    #nameTitle h3 {
+        font-size: 20px;
+        text-align: left;
     }
 
     .flip-card {
-        width: 150px;
-        height: 150px;
-        position: absolute;
-        top: 95px;
-        left: 50%;
-        transform: translateX(-50%);
+        height: 160px;
+        width: 160px;
     }
 
-    #nameTitle h2 {
-        font-family: 'Josefin Sans', sans-serif;
-        width: 100%;
-        position: fixed;
-        top: 400px;
-        text-align: center;
-        color: white;
-        font-size: 40px;
+    .flip-card img{
+        height: 160px;
+        width: 160px;
     }
 
-    .flip-card-back h1 {
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 25;
-        margin: 8 auto 0;
-    }
+    
 }
-
