@@ -2,7 +2,7 @@ let current = $(window).scrollTop();
 const total = $(window).height() - current;
 const ele = $(".astronautImage");
 const currPosition = ele.position().left;
-const trackLength = 250;
+const trackLength = 300;
 $(window).scroll(function (event) {
     current = $(window).scrollTop();
     console.log({ total: total, current: current });
