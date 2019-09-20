@@ -343,7 +343,7 @@ li a:hover:before {
 @media only screen and (max-width: 640px) {
 
     #header {
-        height: 8%;
+        height: 8%;s
     }
     .indexContent {
         margin: 30% auto;
