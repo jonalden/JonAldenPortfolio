@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+section {
+}
+
 section::before,
 section::after {
     position: absolute;
@@ -19,8 +22,12 @@ section::after {
     display: block;
     max-width: 100%;
     position: absolute;
-    bottom: -70px;
+    bottom: 550px;
     opacity: 1;
     transition: all 0.9s ease-out;
     transform: translate(-50%, 100%);
+}
+
+#astroImg {
+    width: 200;
 }

@@ -1,12 +1,18 @@
-let current = $(window).scrollTop();
-const total = $(window).height() - current;
-const ele = $(".astronautImage");
-const currPosition = ele.position().left;
-const trackLength = 300;
-$(window).scroll(function (event) {
-    current = $(window).scrollTop();
-    console.log({ total: total, current: current });
-    console.log(current / total * 100);
-    const newPosition = trackLength * (current / total)
-    ele.css({ left: currPosition + newPosition * (8) + 'px' });
+var measure = {
+    totalY: document.body.scrollHeight,
+    totalX: document.body.scrollWidth,
+    screenY: screen.height,
+    screenX: screen.width,
+}
+
+console.log('hres;')
+
+$(document).on('scroll', function () {
+    const posY = $(this).scrollTop();
+    const pos = {
+        x: measure.screenX / measure.totalY * posY + 'px',
+        y: posY + (measure.screenY / measure.totalY * posY) + 'px',
+    };
+    console.log('translate(' + pos.x + ',' + pos.y + ')')
+    $('#astroImg').css('transform', 'translate(' + pos.x + ',' + pos.y + ') scale(' + (1 + posY / measure.screenY) + ')')
 });
