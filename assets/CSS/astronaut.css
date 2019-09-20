@@ -32,3 +32,11 @@ section::after {
 #astroImg {
     width: 200;
 }
+
+@media only screen and (max-width: 640px) {
+    #astroImg {
+        width: 60px;
+        left: -90;
+        bottom: 500px;
+    }
+}
