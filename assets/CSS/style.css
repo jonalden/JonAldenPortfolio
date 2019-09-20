@@ -222,6 +222,7 @@ li a:hover:before {
 .indexContent {
     margin: 12% auto;
     width: 60%;
+    z-index: 998;
 }
 
 /* flip card with profile pic */

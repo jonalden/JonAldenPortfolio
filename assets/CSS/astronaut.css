@@ -23,6 +23,7 @@ section::after {
     max-width: 100%;
     position: absolute;
     bottom: 550px;
+    left: -290;
     opacity: 1;
     transition: all 0.9s ease-out;
     transform: translate(-50%, 100%);
