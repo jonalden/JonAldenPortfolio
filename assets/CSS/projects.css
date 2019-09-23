@@ -256,6 +256,14 @@ li a:hover:before {
     visibility: visible;
 }
 
+#liriImage:hover+#liriText {
+    visibility: visible;
+}
+
+#bamazonImage:hover+#bamazonText {
+    visibility: visible;
+}
+
 .work {
     flex: 1 1 auto;
     height: auto;
@@ -291,6 +299,7 @@ li a:hover:before {
     font-weight: bolder;
     visibility: hidden;
     pointer-events: none;
+    text-align: center;
 }
 
 /*scrolling*/
