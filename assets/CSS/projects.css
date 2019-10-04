@@ -264,6 +264,18 @@ li a:hover:before {
     visibility: visible;
 }
 
+#todoImage:hover+#todoText {
+    visibility: visible;
+} 
+
+#rlglImage:hover+#rlglText {
+    visibility: visible;
+} 
+
+#ffImage:hover+#ffText {
+    visibility: visible;
+} 
+
 .work {
     flex: 1 1 auto;
     height: auto;

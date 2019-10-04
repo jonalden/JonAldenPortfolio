@@ -256,6 +256,10 @@ li a:hover:before {
     margin-bottom: 4px;
 }
 
+#firstFlipText {
+    margin-top: 20px;
+}
+
 /* Do an horizontal flip when you move the mouse over the flip box container */
 
 .flip-card:hover .flip-card-inner {
@@ -343,7 +347,7 @@ li a:hover:before {
 @media only screen and (max-width: 640px) {
 
     #header {
-        height: 8%;s
+        height: 8%;
     }
     .indexContent {
         margin: 30% auto;

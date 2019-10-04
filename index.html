@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/assets/Images/astronaut_PNG69.pngr" type="image/x-icon">
+  <title>Red Light, Green Light</title>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Titillium+Web:300&display=swap"
         rel="stylesheet">
-    
-    <link rel="stylesheet" type="text/css" href="assets/CSS/projects.css">
-    <link rel="stylesheet" type="text/css" href="assets/CSS/contacts.css">
-    <link rel="stylesheet" type="text/css" href="assets/CSS/astronaut.css">
-    <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Jon Alden Development</title>
-</head>
+        <link rel="stylesheet" type="text/css" href="assets/CSS/projects.css">
+        <link rel="stylesheet" type="text/css" href="assets/CSS/contacts.css">
+        <link rel="stylesheet" type="text/css" href="assets/CSS/astronaut.css">
+        <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>Jon Alden Development</title>
+    </head>
+
 
 <body>
     <!-- twinkiling stars -->
@@ -34,7 +36,8 @@
         </ul>
         </nav>
     </div>
-    
+
+    <!-- flip card and brand statement -->
     <div class="indexContent" id="indexContent">
 
         <!-- flip card -->
@@ -44,10 +47,10 @@
                     <img src="assets/Images/portrait.jpg" alt="Avatar">
                 </div>
                 <div class="flip-card-back">
-                    <h1>Jon Alden</h1>
-                    <p>Really.</p>
-                    <p>Cool.</p>
-                    <p>Guy.</p>
+                    <p id="firstFlipText">Tenacious</p>
+                    <p>Eager</p>
+                    <p>Passionate</p>
+                    <p>Determined</p>
                 </div>
             </div>
         </div>
@@ -72,34 +75,58 @@
 
     </div>
 
+    <!-- astrounaut image -->
     <section class="astronaut">
         <img src="assets/Images/astronaut_PNG69.png" alt="astronaut" class="astronautImage" id="astroImg">
     </section>
 
+    <!-- projects header text -->
     <div id="projectsTitle">
         <p>My Work</p>
     </div>
 
+    <!-- projects images -->
     <div class="projects">
-        <div class="work" id="psychicGame">
-            <a href="https://jonalden.github.io/psychicGame" target="_blank">
-                <img id="psychicImage"
-                    src="https://s10896.pcdn.co/wp-content/uploads/2018/10/Perth-Psychic-Fair-2018-square.jpg"
-                    alt="Psychic Game">
-                <div class="image-text" id="psychicText">Psychic Game</div>
-            </a>
-        </div>
-        <div class="work" id="streetFighter">
-            <a href="https://jonalden.github.io/unit-4-game/" target="_blank">
-                <img id="sfImage" src="https://cdn.segmentnext.com/wp-content/uploads/2016/02/Street-Fighter-5.jpg"
-                    alt="Street Fighter">
-                <div class="image-text" id="sfText">Street Fighter</div>
-            </a>
-        </div>
         <div class="work" id="be4">
             <a href="https://geeksimplified.github.io/M-MOB-Project/" target="_blank">
                 <img id="runImage" src="assets/Images/Screen Shot 2019-09-06 at 10.11.13 PM.png" alt="Be4">
                 <div class="image-text" id="runText">Be4 Running</div>
+            </a>
+        </div>
+        <div class="work" id="rlgl">
+            <a href="https://jl-testing.herokuapp.com/" target="_blank">
+                <img id="rlglImage" src="assets/Images/traffic-light-svgrepo-com.svg" alt="rlgl image">
+                <div class="image-text" id="rlglText">Tinder Clone</div>
+            </a>
+        </div>
+        <div class="work" id="todo">
+            <a href="https://super-to-do.herokuapp.com" target="_blank">
+                <img id="todoImage" src="https://www.growthengineering.co.uk/wp-content/uploads/2014/07/To-Do-List.png"
+                    alt="todo image">
+                <div class="image-text" id="todoText">Full Stack To-Do</div>
+            </a>
+        </div>
+        <div class="work" id="friendFinder">
+            <a href="https://friend-finder-woo.herokuapp.com" target="_blank">
+                <img id="ffImage"
+                    src="https://target.scene7.com/is/image/Target/GUEST_8fca7138-a570-4e3f-befc-796c2c8e17cf?wid=488&hei=488&fmt=pjpeg"
+                    alt="Friend Finder">
+                <div class="image-text" id="ffText">Friend Finder</div>
+            </a>
+        </div>
+        <div class="work" id="bamazon">
+            <a href="https://github.com/jonalden/Bamazon" target="_blank">
+                <img id="bamazonImage" src="https://img.alicdn.com/tfs/TB18AN8B4naK1RjSZFtXXbC2VXa-200-200.png"
+                    alt="bamazon">
+                <div class="image-text" id="bamazonText">Node Market</div>
+            </a>
+        </div>
+        <div class="work" id="liriBot">
+            <a href="https://github.com/jonalden/LIRI" target="_blank">
+                <img id="liriImage"
+                    src="https://www.thanksbuyer.com/image/cache/data/201601/42837/1453174411-5-200x200.jpg"
+                    alt="LIRI Bot">
+                <div class="image-text" id="liriText">LIRI Bot</div>
             </a>
         </div>
         <div class="work" id="trainSchedule">
@@ -122,24 +149,29 @@
                 <div class="image-text" id="gifText">Gif Finder</div>
             </a>
         </div>
-        <div class="work" id="liriBot">
-            <a href="https://github.com/jonalden/LIRI" target="_blank">
-                <img id="liriImage" src="https://www.thanksbuyer.com/image/cache/data/201601/42837/1453174411-5-200x200.jpg" alt="LIRI Bot">
-                <div class="image-text" id="liriText">LIRI Bot</div>
+        <!-- <div class="work" id="streetFighter">
+            <a href="https://jonalden.github.io/unit-4-game/" target="_blank">
+                <img id="sfImage" src="https://cdn.segmentnext.com/wp-content/uploads/2016/02/Street-Fighter-5.jpg"
+                    alt="Street Fighter">
+                <div class="image-text" id="sfText">Number Game</div>
             </a>
-        </div>
-        <div class="work" id="bamazon">
-            <a href="https://github.com/jonalden/Bamazon" target="_blank">
-                <img id="bamazonImage" src="https://img.alicdn.com/tfs/TB18AN8B4naK1RjSZFtXXbC2VXa-200-200.png" alt="bamazon">
-                <div class="image-text" id="bamazonText">Node Market</div>
+        </div> -->
+        <!-- <div class="work" id="psychicGame">
+            <a href="https://jonalden.github.io/psychicGame" target="_blank">
+                <img id="psychicImage"
+                    src="https://s10896.pcdn.co/wp-content/uploads/2018/10/Perth-Psychic-Fair-2018-square.jpg"
+                    alt="Psychic Game">
+                <div class="image-text" id="psychicText">Psychic Game</div>
             </a>
-        </div>
+        </div> -->
     </div>
 
+    <!-- form header text -->
     <div id="contactTitle">
         <p>Let's Talk</p>
     </div>
 
+    <!-- contact form -->
     <div class="formDiv">
         <form class="form-style-4" action="https://formspree.io/jondevalden@gmail.com" method="POST">
             <label for="field1">
